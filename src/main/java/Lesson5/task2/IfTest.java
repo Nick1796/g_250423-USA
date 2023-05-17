@@ -7,7 +7,7 @@ public class IfTest {
         System.out.println("Начало");
 
         int a = 10;
-        int b = 15;
+        int b = 5;
         boolean result = a > b;
 
         if (result) {

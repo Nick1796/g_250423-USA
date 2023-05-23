@@ -8,11 +8,28 @@ public class HWScanner {
 
         System.out.println("Введите 2 слова с четным кол-вом букв: ");
         Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine();
-        System.out.println("Вы ввели слово: "+s);
+        String world = scanner.nextLine();
+        String world1 = scanner.nextLine();
+        System.out.println("Вы ввели слово: "+world);
+        System.out.println("Вы ввели слово: "+world1);
 
-        System.out.println("Первая половина слова: " + s.substring(0,2));
-        System.out.println("Вторая половина слова: " + s.substring(2,4));
+        if (world.length() % 2 !=0 || world.length() % 2 !=0) {
+            System.out.println("не корректные данные: ");
+
+        }
+
+        int s = world.length() / 2;
+        int s1 = world.length() /2;
+
+
+
+      //  System.out.println("Первая половина слова: " + world.substring(0, s));
+       // System.out.println("Вторая половина слова: " + world1.substring(s1));
+
+        System.out.println(world.substring(0, s) + world1.substring(s1));
+
+
+
 
 
 
